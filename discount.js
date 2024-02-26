@@ -3,9 +3,12 @@
 let price = [250,300,450,550,600];
 let discount;
 
-for(let i of price) {
-    discount = 10/100 * i;
-    i = i - discount;
-    console.log(i);
+//for-in-loop will access the index of array named as price
+for(let i in price) {
+    discount = 10/100 * price[i];
+    price[i] = price[i] - discount;
 }
+
+//displaying the price after applying 10% of discount
+console.log(price);
 
