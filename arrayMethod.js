@@ -2,7 +2,8 @@ let food = ["Chips","Colddrink","Lays","Kurkure"];
 let marks = [23,34,5,6,7];
 
 //it will convert arrary into a string
-
+let string = marks.toString();
+console.log(string);
 
 //concat function will combine two arrays and return one single as result
 let combination = food.concat(marks);
