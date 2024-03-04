@@ -38,7 +38,7 @@ const mappedArray = characters.map( (character) => {
     return character.name;
 } );
 
-console.log(mappedArray);
+// console.log(mappedArray);
 
 //Getting array of all heights
 
@@ -46,7 +46,7 @@ const height = characters.map( (character) => {
     return character.height;
 } );
 
-console.log(height);
+// console.log(height);
 
 //Get an array of objects with just name and height properties
 
@@ -58,4 +58,5 @@ const getArray = characters.map( (newArray) => {
 
 } )
 
-console.log(getArray);
+// console.log(getArray);
+
