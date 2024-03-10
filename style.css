@@ -1,0 +1,22 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    color: rgb(163, 89, 89);
+}
+
+button {
+    width: 8rem;
+    height: 3rem;
+    background-color: brown;
+    font-size: large;
+}
+
+h1 {
+    color: blue;
+    text-decoration: line-through;
+}
