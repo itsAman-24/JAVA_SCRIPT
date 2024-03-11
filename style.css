@@ -1,22 +1,22 @@
 * {
-    margin: 0rem;
-    padding: 0rem;
+    /* margin: 0rem;
+    padding: 0rem; */
     box-sizing: border-box;
 }
 
 body {
-    background-color: antiquewhite;
-    color: rgb(163, 89, 89);
+    background-color: hsl(340, 62%, 71%);
+    color: rgb(11, 10, 10);
 }
 
 button {
-    width: 8rem;
-    height: 3rem;
+    width: 6rem;
+    height: 1.5rem;
     background-color: brown;
     font-size: large;
 }
 
 h1 {
     color: blue;
-    text-decoration: line-through;
+    /* text-decoration: line-through; */
 }
