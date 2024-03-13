@@ -21,3 +21,13 @@ console.log(demo2);
 let demo3 = document.getElementsByTagName("p");
 console.dir(demo3);
 console.log(demo3);
+
+//By using querySelectors
+/*we can provide anything in querySelectors idName / className / tagName it will return first matching element */
+let demo4 = document.querySelector("p");
+console.dir(demo4);
+
+//querySelectorAll will return nodeList of every matching element
+
+let demo5 = document.querySelectorAll("#h2");
+console.dir(demo5);
