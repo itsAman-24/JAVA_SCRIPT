@@ -32,5 +32,5 @@ let demo4 = document.querySelector("p");
 let demo5 = document.querySelectorAll("#h2");
 // console.dir(demo5);
 
-let divTag = document.querySelector("div");
-console.dir(divTag);
+let div = document.querySelector("div");
+console.dir(div);
