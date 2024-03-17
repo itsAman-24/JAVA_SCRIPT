@@ -1,0 +1,9 @@
+.commonDiv {
+    height: 10rem;
+    width: 10rem;
+    border: .1rem solid grey;
+    margin: .3rem;
+    background-color: aquamarine;
+    text-align: center;
+    
+}
