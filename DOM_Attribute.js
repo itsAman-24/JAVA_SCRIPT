@@ -13,4 +13,6 @@ div.style.fontSize = "2rem";
 
 div.innerText = "Hi Coders";
 
+div.style.borderRadius = ".3rem";
+
 console.log(div.innerHTML);
