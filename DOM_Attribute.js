@@ -14,5 +14,11 @@ div.style.fontSize = "2rem";
 div.innerText = "Hi Coders";
 
 div.style.borderRadius = ".3rem";
+div.style.visibility = "hidden";   //it will hide the visibility of div tag
+
+let para = document.querySelector("p");
+para.innerText = "I am the innerText inside Paragraph";
+
+para.style.backgroundColor = "orange";
 
 console.log(div.innerHTML);
