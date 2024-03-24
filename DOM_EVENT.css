@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.myBtn1 {
+    background-color: aqua;
+    height: 2rem;
+    width: 5rem;
+    color: black;
+    margin: .3rem;
+}
+
+.myBtn2 {
+    background-color: aqua;
+    height: 2rem;
+    width: 5rem;
+    color: black;
+    margin: .3rem;
+}
+
+.divClass {
+    display: flex;
+    flex-direction: row;
+    background-color: burlywood;
+    width: 20rem;
+    height: 20rem;
+}
