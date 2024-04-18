@@ -1,23 +1,23 @@
-// class car {
+class car {
 
-//     constructor(brand,mileage) {
-//         console.log("creating a new object");
-//         this.brand = brand;
-//         this.mileage = mileage;
-//     }
+    // constructor(brand,mileage) {
+    //     console.log("creating a new object");
+    //     this.brand = brand;
+    //     this.mileage = mileage;
+    // }
 
-//     start() {
-//         console.log("starting")
-//     }
+    start() {
+        console.log("starting")
+    }
 
-//     stop() {
-//         console.log("stoping");
-//     }
+    stop() {
+        console.log("stoping");
+    }
 
 
-// }
+}
 
-// let BMW = new car("BMW",45);  // creating a new object
+let BMW = new car("BMW",45);  // creating a new object
 
 
 const employ1 = {
