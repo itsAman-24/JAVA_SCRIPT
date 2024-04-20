@@ -10,7 +10,7 @@
 
 //create a arrow func to count the total number of vowels in a string
 
-const countVowel = (input_string) => {
+const countVowel = (input_string)  => {
   let count = 0;
   
   //for-of loop will traverse on every element of input string
