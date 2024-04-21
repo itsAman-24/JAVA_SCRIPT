@@ -11,7 +11,7 @@ const Id = (carts , callback) => {
 
 
 //this function will hold the callback function also
-createOrderId (carts , (orderId) => {
+const getId = createOrderId (carts , (orderId) => {
     proceedToPayment(orderId);
 });
 
@@ -20,6 +20,6 @@ createOrderId (carts , (orderId) => {
 
 const promises = createOrderId(carts);
 
-promises.then( (orderId) => {
+promises.then( function (orderId) {      //then() is executed after the data get by the promise object as a returned value 
     proceedToPayment(orderId);
 } )
