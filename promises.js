@@ -23,3 +23,5 @@ const promises = createOrderId(carts);
 promises.then( function (orderId) {      //then() is executed after the data get by the promise object as a returned value 
     proceedToPayment(orderId);
 } )
+
+// we can also write arrow function to reduce the callback hell 
