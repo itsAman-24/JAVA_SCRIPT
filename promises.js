@@ -24,4 +24,4 @@ promises.then( function (orderId) {      //then() is executed after the data get
     proceedToPayment(orderId);
 } )
 
-// we can also write arrow function to reduce the callback hell 
+// we can also write arrow function to reduce the callback hell nd also code readability
