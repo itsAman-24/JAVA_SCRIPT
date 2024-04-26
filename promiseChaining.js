@@ -26,6 +26,7 @@ function createOrderId(cart) {
     return prms;
 }
 
+//varifying the orderId and returning true as per the condition
 function varifyOrderId (cart) {
     return true;
 }
