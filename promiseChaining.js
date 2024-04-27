@@ -28,5 +28,7 @@ function createOrderId(cart) {
 
 //varifying the orderId and returning true as per the condition
 function varifyOrderId (cart) {
-    return true;
+    return true; // if condition resolved 
+
+    return FileSystemEntry; // if condition is not true
 }
