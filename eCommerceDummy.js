@@ -38,7 +38,7 @@ function proceedToPayment(orderId) {
                 const err = new Error("Error while payment");
                 reject(err);
             }
-        },4000)
+        },4000);
     })
 };
 
@@ -51,8 +51,40 @@ function orderSummary(order) {
             }
             else {
                 const err = new Error("Order is not placed");
+                reject(err);
             }
-        },4000)
+        },4000);
     })
-};
+}
 
+function updateWallet(amount) {
+    return new Promise(function(reject,resolve) {
+        setTimeout(function() {
+            if(amount) {
+                console.log("Amount paid");
+                resolve(amount);
+            }
+
+            else {
+                const err  = new Error("Amount is pending");
+                reject(err);
+            }
+        },5000);
+    })
+}
+
+function updateWallet(walletInfo) {
+    return new Promise(function(resolve,reject) {
+        setTimeout(function() {
+            if(updateWallet) {
+                console.log("Wallet Upadted");
+                resolve(walletInfo);
+            }
+
+            else {
+                const err = new Error("Error in updating");
+                reject(err);
+            }
+        },4000);
+    })
+}
