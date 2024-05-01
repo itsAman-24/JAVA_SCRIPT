@@ -38,7 +38,7 @@ const characters = [
        mass: '84',
        eye_color: 'blue',
        gender: 'male',
-   }
+   } 
 ];
 
 //Get all Male characters
@@ -58,7 +58,7 @@ console.log(female);
 
 // Get characters with mass greater than 100
 
-const mass = characters.filter( (character) => {
+const mass = characters.filter((character) => {
   if(character.mass > 100) {
    return character;
   }

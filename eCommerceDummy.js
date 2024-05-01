@@ -1,4 +1,5 @@
 const cart = ["shoes", "shirts", "jeans"];
+// Promise 
 
 createOrderId(cart)
     .then(function(orderId) {
