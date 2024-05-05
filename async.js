@@ -5,8 +5,26 @@
 // const Value = getData;
 // console.log(Value);
 
+
+// This function will return promise 
 async function getData() {
-    return "randomValue";
+    setTimeout(() => {
+        return "NamsteJavaScript";
+    } ,2000)
+
+    // return "Nmaste";
 }
 
-const value = getData();
+const dataPromise = getData();
+debugger
+console.log(dataPromise);
+debugger
+
+dataPromise.then((Response) => { console.log(Response); })
+
+
+
+//Await keyword is only used with async function
+
+
+
