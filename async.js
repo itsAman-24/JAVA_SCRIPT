@@ -1,12 +1,5 @@
-// // getData = async() => {
-// //     return "randomValue";
-// // }
+// // async function will always return promise 
 
-// // const Value = getData;
-// // console.log(Value);
-
-
-// // This function will return promise 
 // async function getData() {
 //     setTimeout(() => {
 //         return "NamsteJavaScript";
@@ -16,47 +9,65 @@
 // }
 
 // const dataPromise = getData();
-// debugger
-// console.log(dataPromise);
-// debugger
-
+// console.log(dataPromise);  //this line will console the promise returned by getData()
 // dataPromise.then((Response) => { console.log(Response); })
 
 
-
-// //Await keyword is only used with async function
-
-
+// //by using callback function
 // function getData(callback) {
-//     // debugger
 //     setTimeout(() => {
-//         // callback("NamasteJavaScript");
-//         callback("Namstey");
+//         callback("NamasteJavaScript");
+//         // callback("Namstey");
 //     }, 2000);
-//     // debugger
 // }
 
-// const callback = (strValue) => {
-//     return "Namaste";
-// }
+// // const callback = (strValue) => {
+// //     return "Namaste";
+// // }
 
 // // Usage
-// getData(data => {
-//     // debugger
+// getData((data) => {
 //     console.log(data); // Output: NamasteJavaScript
 // });
 
 
-function getData2() {
-    return new Promise( (reject , resolve) => {
-        setTimeout(() => {
-            resolve("Namastey");
-        },4000);
 
-        
-    })
+// // by using Promises
+// function getData2() {
+//     return new Promise( (resolve) => {
+//         setTimeout(() => {
+//             resolve("Namastey");
+//         },4000);
+//     })
+// }
+
+// getData2().then(data => {
+//     console.log(data);
+// })
+
+
+
+//Await keyword can be only used inside async function
+
+const p = new Promise((resolve) => {
+    setTimeout(() => {
+        resolve("Promise is being resolving");
+    }, 5000);
+    
+})
+
+async function handlePromise() {
+    //handling with the help of then()
+    p.then((response) => {
+        console.log(response);
+    }) 
+
+    //Instead of writing above code we can use await keyword inside async function to handle the promise 
+    const result = await p;
+
+    // console.log(result);
+    console.log("I'm again excuted by javascript while await is waiting")
+
 }
 
-getData2().then(data => {
-    console.log(data);
-})
+handlePromise();
