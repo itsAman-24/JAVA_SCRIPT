@@ -49,24 +49,60 @@
 
 //Await keyword can be only used inside async function
 
-const p = new Promise((resolve) => {
-    setTimeout(() => {
-        resolve("Promise is being resolving");
-    }, 5000);
+// const p1 = new Promise((resolve) => {
+//     setTimeout(() => {
+//         resolve("p1 IS RESOLVED");
+//     }, 10000);
     
-})
+// })
+
+// const p2 = new Promise((resolve) => {
+//     setTimeout(() => {
+//         resolve("p2 IS RESOLVED");
+//     },5000);
+// })
+
+//DEMO Function for showing the demo
+
+// async function handlePromise() {
+//     //handling with the help of then()
+//     // p.then((response) => {
+//     //     console.log(response);
+//     // }) 
+
+//     console.log("Hello World");
+//     //Instead of writing above code we can use await keyword inside async function to handle the promise 
+//     const result1 = await p1;
+//     console.log("p1 Promise is resolved");
+//     console.log(result1);
+
+//     const result2 = await p2;
+//     console.log("P2 promise is resolved");
+//     console.log(result2);
+// }
+
+// handlePromise();
+
+const API_URL= "https://api.github.com/users/itsAman-24";
 
 async function handlePromise() {
-    //handling with the help of then()
-    p.then((response) => {
-        console.log(response);
-    }) 
+    
+    try {
+        //making API call using fetch() 
+        const data = await fetch(API_URL);    //fetch() will return promise which will be stored inside data variable
 
-    //Instead of writing above code we can use await keyword inside async function to handle the promise 
-    const result = await p;
+        //.json() is used to make data into string
+        const JSON_value = await data.json();   //.json() will also return promise 
 
-    // console.log(result);
-    console.log("I'm again excuted by javascript while await is waiting")
+        console.log(JSON_value);
+    } 
+    
+    catch(err) {
+        console.log(err);
+    }
+
+
+    
 
 }
 
